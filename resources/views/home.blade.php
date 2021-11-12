@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
         
         <!-- Import External Javascript: -->
-        <script src="js/mwi.js"></script>
+        <script src="{{ URL::asset('js/mwi.js') }}"></script>
+        <script src="{{ URL::asset('js/app.js') }}"></script>
 
     </head>
     <div>
