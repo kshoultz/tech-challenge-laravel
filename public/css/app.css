@@ -285,8 +285,7 @@ li {
   .mwi-card-layout {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     align-items: center;
   }
 }
@@ -400,8 +399,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 20px;
-    -moz-column-gap: 20px;
-         column-gap: 20px; 
+    column-gap: 20px; 
   }
 }
 @media (max-width: 1439px) {
@@ -451,7 +449,8 @@ li {
   padding:10px;
 }
 .mwi-toolbar a, 
-.mwi-toolbar button { 
+.mwi-toolbar button,
+input[type=submit] { 
   white-space: nowrap;
   line-height: 21px;
   font-weight: 500;
@@ -461,7 +460,8 @@ li {
   border: none;
   cursor: pointer;
 }
-.mwi-toolbar button {
+.mwi-toolbar button,
+input[type=submit] {
   min-width: 130px;
 }
 /* MWI Toolbar END */
