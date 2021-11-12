@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
         
         <!-- Import External Javascript: -->
-        <script src="js/main.js"></script>
+        <script src="js/mwi.js"></script>
 
     </head>
     <div>
@@ -64,6 +64,7 @@
                             If the operation completed already, notify the user that this has already been done.
                         </p>
                     </div>
+                    <ul id="mwi-list"></ul>
                 </div>
             </div>
         </div>
