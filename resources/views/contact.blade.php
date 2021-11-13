@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    @include('header')
+    @include('components/header')
     </head>
     <body class="mwi-split-layout">
         <div class="mwi-full-layout mwi-split-dark-container">
@@ -36,7 +36,7 @@
                         <a href="/">home</a>
                     </div>
                 </header>
-                @include('contact-form')
+                @include('components/contact-form')
             </div>
         </div>
             

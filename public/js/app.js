@@ -2062,8 +2062,6 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./mwi */ "./resources/js/mwi.js");
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -2094,50 +2092,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/mwi.js":
-/*!*****************************!*\
-  !*** ./resources/js/mwi.js ***!
-  \*****************************/
-/***/ (() => {
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var mwi = {};
-mwi.candidates = [];
-mwi.manifest = null;
-mwi.candidates.push(['Matt Johnson', 'Bart Paden', 'Ryan Doss', 'Jared Malcolm']);
-mwi.candidates.push(['Matt Johnson', 'Bart Paden', 'Jordan Heigle', 'Tyler Viles']);
-
-mwi.mergeCandidates = function (array1, array2) {
-  return _toConsumableArray(new Set([].concat(_toConsumableArray(array1), _toConsumableArray(array2))));
-};
-
-mwi.generateCandidatesList = function () {
-  if (mwi.manifest) {
-    alert('Thank you, but the list has already been made.');
-  } else {
-    var ul = document.getElementById('mwi-list');
-    mwi.manifest = mwi.mergeCandidates(mwi.candidates[0], mwi.candidates[1]);
-    mwi.manifest.forEach(function (mwiName, i) {
-      var li = document.createElement('li');
-      li.innerHTML = '<a href="#mwi-bottom">' + mwiName + '</a>';
-      ul.appendChild(li);
-    });
-  }
-};
 
 /***/ }),
 

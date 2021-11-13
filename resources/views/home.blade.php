@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    @include('header')
+    @include('components/header')
     <div>
         <div class="mwi-full-layout">
             <div class="mwi-full-content"mwi-full-width-content>
@@ -11,6 +11,9 @@
                     </div>
                 </header>
                 <div class="mwi-card-layout">
+                    @include('components/card')
+                    @include('components/card')
+                    @include('components/card')
                     <div class="mwi-card">
                         <div class="mwi-card-icon">
                             <img src="images/Talkie.png" alt="Talkie Image" />
