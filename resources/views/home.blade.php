@@ -25,6 +25,7 @@
                         </p>
                     </div>
                     <ul id="mwi-list"></ul>
+                    @include('components/footer')
                 </div>
             </div>
         </div>
