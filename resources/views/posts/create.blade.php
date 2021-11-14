@@ -20,6 +20,16 @@
                     name="paragraph"
                     placeholder="Paragraph..."
                 />
+                <input
+                    type="text"
+                    name="image_url"
+                    placeholder="Image Name..."
+                />
+                <input
+                    type="text"
+                    name="active"
+                    placeholder="Y / N"
+                />
                 <button type="submit">Submit</button>
             </div>
         </form>

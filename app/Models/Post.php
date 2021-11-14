@@ -12,6 +12,6 @@ class Post extends Model
     protected $table = 'posts';
     protected $primaryKey = 'id';
     public $timestamps = true;
-    protected $fillable = ['title', 'paragraph'];
+    protected $fillable = ['title', 'paragraph', 'image_url', 'active'];
     
 }

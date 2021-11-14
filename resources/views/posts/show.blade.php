@@ -4,6 +4,7 @@
     <div>
         <div>
             <h1>
+                <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" />
                 {{ $post->title }}
             </h1>
         </div>

@@ -40,7 +40,9 @@ class PostsController extends Controller
     {
         Post::create([
             'title' => $request->input('title'),
-            'paragraph' => $request->input('paragraph')
+            'paragraph' => $request->input('paragraph'),
+            'image_url' => $request->input('image_url'),
+            'active' => $request->input('active')
         ]);
 
         return redirect('/posts');
@@ -84,7 +86,9 @@ class PostsController extends Controller
         Post::where('id', $id)
             ->update([
                 'title' => $request->input('title'),
-                'paragraph' => $request->input('paragraph')
+                'paragraph' => $request->input('paragraph'),
+                'image_url' => $request->input('image_url'),
+                'active' => $request->input('active')
             ]);
 
         return redirect('/posts');

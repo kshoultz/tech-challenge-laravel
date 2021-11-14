@@ -23,6 +23,18 @@
                     placeholder="Paragraph..."
                     value="{{ $post->paragraph }}"
                 />
+                <input
+                    type="text"
+                    name="image_url"
+                    placeholder="Image Name..."
+                    value="{{ $post->image_url }}"
+                />
+                <input
+                    type="text"
+                    name="active"
+                    placeholder="Y / N"
+                    value="{{ $post->active }}"
+                />
                 <button type="submit">Submit</button>
             </div>
         </form>
