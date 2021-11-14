@@ -24,6 +24,10 @@ Route::get('contacts', function(){
     return Contact::all();
 });
 
+Route::put('contacts', function(Request $request) {
+    return Contact::create($request->all);
+});
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
