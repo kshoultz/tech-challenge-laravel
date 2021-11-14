@@ -1,8 +1,8 @@
 <div class="mwi-card">
     <div class="mwi-card-icon">
-        <img src="images/Talkie.png" alt="Talkie Image" />
+        <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" />
     </div>
-    <h2>Heading Two</h2>
-    <p>Integer accumsan molestle nisl, id faucibus urna accumnsan quis. Proin vulputate, mauris semper maximus.</p>
-    <div class="mwi-toolbar"><a href="#" class="mwi-toolbar-link">Learn More</a></div>
+    <h2>{{ $post->title }}</h2>
+    <p>{{  $post->paragraph }}</p>
+    <div class="mwi-toolbar"><a href="/posts/{{ $post->id }}" class="mwi-toolbar-link">Learn More</a></div>
 </div>

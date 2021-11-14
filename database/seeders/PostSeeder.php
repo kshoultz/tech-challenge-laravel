@@ -15,22 +15,22 @@ class PostSeeder extends Seeder
     public function run()
     {
         DB::table('posts')->insert([
-            'title' => 'Post 1',
-            'paragraph' => 'Text for post 1.',
+            'title' => 'Translators, LLC',
+            'paragraph' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum quam eget venenatis varius. Praesent sit amet efficitur nisl. Nulla nisl.',
             'image_url' => 'Talkie.png',
             'active' => 'Y'
         ]);
 
         DB::table('posts')->insert([
-            'title' => 'Post 2',
-            'paragraph' => 'Text for post 2.',
+            'title' => 'Rabbit Chasers',
+            'paragraph' => 'Cras tortor massa, ultricies in porttitor at, efficitur id elit. Phasellus faucibus tellus vel nibh congue elementum. Duis sed lectus metus.',
             'image_url' => 'Rabbit.png',
             'active' => 'Y'
         ]);
 
         DB::table('posts')->insert([
-            'title' => 'Post 3',
-            'paragraph' => 'Text for post 3.',
+            'title' => 'Security Plus',
+            'paragraph' => 'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras dignissim diam et dolor cursus, eget placerat.',
             'image_url' => 'Shield.png',
             'active' => 'Y'
         ]);
