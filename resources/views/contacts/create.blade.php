@@ -2,14 +2,10 @@
 
 @section('content')
     <div>
-        <div>
-            <h1>Create Contact</h1>
-        </div>
-    </div>
-    <div>
-        <form action="/contacts" method="POST">
+        <form class="mwi-form" action="/contacts" method="POST">
             @csrf
-            <div>
+            <h2>Create Contact</h2>
+            <div class="mwi-fields-container">
                 <input
                     type="text"
                     name="first_name"
@@ -35,7 +31,9 @@
                     name="message"
                     placeholder="Message..."
                 />
-                <button type="submit">Submit</button>
+                <div class="mwi-toolbar">
+                    <button type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>

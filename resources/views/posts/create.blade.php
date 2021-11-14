@@ -2,14 +2,10 @@
 
 @section('content')
     <div>
-        <div>
-            <h1>Create Post</h1>
-        </div>
-    </div>
-    <div>
-        <form action="/posts" method="POST">
+        <form class="mwi-form" action="/posts" method="POST">
             @csrf
-            <div>
+            <h2>Create Post</h2>
+            <div class="mwi-fields-container">
                 <input
                     type="text"
                     name="title"
@@ -30,7 +26,9 @@
                     name="active"
                     placeholder="Y / N"
                 />
-                <button type="submit">Submit</button>
+                <div class="mwi-toolbar">
+                    <button type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>

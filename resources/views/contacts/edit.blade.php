@@ -2,15 +2,11 @@
 
 @section('content')
     <div>
-        <div>
-            <h1>Update Contact</h1>
-        </div>
-    </div>
-    <div>
-        <form action="/contacts/{{ $contact->id }}" method="POST">
+        <form class="mwi-form" action="/contacts/{{ $contact->id }}" method="POST">
             @csrf
             @method('PUT')
-            <div>
+            <h2>Update Contact</h2>
+            <div class="mwi-fields-container">
                 <input
                     type="text"
                     name="first_name"
@@ -41,7 +37,9 @@
                     placeholder="Message..."
                     value="{{ $contact->message }}"
                 />
-                <button type="submit">Submit</button>
+                <div class="mwi-toolbar">
+                    <button type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>

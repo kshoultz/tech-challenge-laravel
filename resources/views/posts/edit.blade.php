@@ -2,15 +2,11 @@
 
 @section('content')
     <div>
-        <div>
-            <h1>Update Post</h1>
-        </div>
-    </div>
-    <div>
-        <form action="/posts/{{ $post->id }}" method="POST">
+        <form class="mwi-form" class="mwi-form" action="/posts/{{ $post->id }}" method="POST">
             @csrf
             @method('PUT')
-            <div>
+            <h2>Update Post</h2>
+            <div class="mwi-fields-container">
                 <input
                     type="text"
                     name="title"
@@ -35,7 +31,9 @@
                     placeholder="Y / N"
                     value="{{ $post->active }}"
                 />
-                <button type="submit">Submit</button>
+                <div class="mwi-toolbar">
+                    <button type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>
