@@ -1,4 +1,4 @@
-<form class="mwi-form" action="https://api.mwi.dev/contact" method="POST">
+<form class="mwi-form" action="/contacts" method="POST">
     @csrf
     <h2>Heading Two</h2>
     <div class="mwi-fields-container">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ Route::get('/contact', function () {
 });
 
 Route::resource('/posts', PostsController::class);
+Route::resource('/contacts', ContactController::class);

@@ -11,9 +11,6 @@
                     </div>
                 </header>
                 <div class="mwi-card-layout">
-                    @include('components/card')
-                    @include('components/card')
-                    @include('components/card')
                     <div class="mwi-card">
                         <div class="mwi-card-icon">
                             <img src="images/Talkie.png" alt="Talkie Image" />
