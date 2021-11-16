@@ -24,7 +24,7 @@ Route::get('contacts', function(){
     return Contact::all();
 });
 
-Route::put('contacts', function(Request $request) {
+Route::post('contacts', function(Request $request) {
     return Contact::create($request->all);
 });
 
