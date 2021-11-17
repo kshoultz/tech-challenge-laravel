@@ -21,7 +21,7 @@
 
                             <div>
                                 <div style="background-color:#FFFFFF;">
-                                    <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" style="background-color:#FFFFFF;" />
+                                    <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" />
                                 </div>
                                 <h2>
                                     <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
