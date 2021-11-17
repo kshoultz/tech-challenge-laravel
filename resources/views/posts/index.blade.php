@@ -21,7 +21,7 @@
                         </form>
                     </div>
                     <h2>
-                        <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" />
+                        <img src="images/{{ $post->image_url }}" alt="{{ $post->image_url }} Image" style="background-color:#FFFFFF;" />
                         <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                     </h2>
                     <p>
